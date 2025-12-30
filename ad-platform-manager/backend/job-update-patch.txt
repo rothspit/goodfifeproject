@@ -1,0 +1,12 @@
+# 1. コメント変更
+1,5s/ヘブン更新スケジューラー/ジョブ更新スケジューラー/g
+1,5s/指定された15枠の時間に自動でヘブン更新ボタンを押す/1日1回、指定時刻にジョブ更新ボタンを押す/g
+
+# 2. クラス名変更
+s/class HeavenUpdateScheduler/class JobUpdateScheduler/g
+s/const scheduler = new HeavenUpdateScheduler/const scheduler = new JobUpdateScheduler/g
+
+# 3. スケジュール設定を1日1回に変更 - 削除して置換
+16,33c\
+// ジョブ更新の実行時刻（24時間形式、1日1回）\
+const SCHEDULE_TIME = '03:00'; // 深夜3時に実行
