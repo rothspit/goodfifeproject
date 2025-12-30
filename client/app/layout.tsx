@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import { Noto_Sans_JP } from 'next/font/google';
+import GlobalChat from '@/components/GlobalChat';
+import { notoSansJP } from '@/lib/fonts';
 import './globals.css';
-
-const notoSansJP = Noto_Sans_JP({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
   title: '人妻の蜜 | 西船橋 誠実で良い子が多いお店',
@@ -17,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={notoSansJP.className}>{children}</body>
+      <body className={notoSansJP.className}>
+        {children}
+        <GlobalChat />
+      </body>
     </html>
   );
 }

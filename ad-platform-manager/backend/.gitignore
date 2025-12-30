@@ -1,0 +1,5 @@
+
+# 認証情報ファイル（セキュリティ）
+credentials.json
+*.credentials
+*.credentials.json

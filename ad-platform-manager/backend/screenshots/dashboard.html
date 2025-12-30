@@ -1,0 +1,628 @@
+<!DOCTYPE html><html lang="ja" class="ui-mobile"><head><base href="https://spmanager.cityheaven.net/H1Main.php">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta name="format-detection" content="telephone=no">
+		<title>風俗情報サイト　シティヘブンネットCMS</title>
+		
+		<link rel="stylesheet" href="/css/jquery.mobile-1.0.min.css?ssldate=20180724" media="screen">
+		<link rel="stylesheet" href="/css/base.css?update=20220801&amp;ssldate=20180724" media="screen">
+		<script type="text/javascript" async="" src="https://cdn.treasuredata.com/sdk/2.1/td.min.js"></script><script type="text/javascript" src="/js/jquery-1.7.1.min.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/disable-ajax.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/jquery.mobile-1.0.min.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/common.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/screenLock.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/buttonAction.js?ssldate=20180724"></script>
+        <script type="text/javascript" src="/js/headerLink.js?ssldate=20180724"></script>
+					
+        <script type="text/javascript">
+        if (!~navigator.userAgent.indexOf('Google Page Speed Insights') && !~navigator.userAgent.indexOf('Googlebot') && !~navigator.userAgent.indexOf('Chrome-Lighthouse')) {
+        !function(t,e){if(void 0===e[t]){e[t]=function(){e[t].clients.push(this),this._init=[Array.prototype.slice.call(arguments)]},
+        e[t].clients=[];for(var r=function(t){return function(){return this["_"+t]=this["_"+t]||[],
+        this["_"+t].push(Array.prototype.slice.call(arguments)), this}}, s=["blockEvents",
+        "unblockEvents", "setSignedMode", "setAnonymousMode", "resetUUID", "addRecord",
+        "fetchGlobalID", "set", "trackEvent", "trackPageview", "trackClicks", "ready"],
+        n=0;n<s.length;n++){var c=s[n];e[t].prototype[c]=r(c)}var o=document.createElement("script");o.type="text/javascript",
+        o.async=!0, o.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.treasuredata.com/sdk/2.1/td.min.js";
+        var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o, a)}}("Treasure", this);
+        }
+        </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.8.6/fingerprint2.min.js"></script>
+        </head>
+	<body class="ui-mobile-viewport">
+    <script type="text/javascript">
+        if (!~navigator.userAgent.indexOf('Google Page Speed Insights') && !~navigator.userAgent.indexOf('Googlebot') && !~navigator.userAgent.indexOf('Chrome-Lighthouse')) {
+        var td = new Treasure({
+          host: 'in.treasuredata.com',
+          database: 'surprisecrew_production',
+          writeKey: '10483/24240077c38c8ca9b2128445a441bd4b560a6d52'
+        });
+        // td_global_idを取得可能とするため、同意を得たものとして記述
+        td.setSignedMode();
+        // Enable cross-domain tracking
+        td.set('$global', 'td_global_id', 'td_global_id');
+
+        function getCookieForTD(key) {
+          var cookieString = document.cookie;
+          var cookieKeyArray = cookieString.split(';');
+          for (var i=0; i<cookieKeyArray.length; i++) {
+            var targetCookie = cookieKeyArray[i];
+            targetCookie = targetCookie.replace(/(^\s+)|(\s+$)/g, '');
+            var valueIndex = targetCookie.indexOf('=');
+            if (targetCookie.substring(0, valueIndex) == key) {
+              return unescape(targetCookie.slice(valueIndex + 1));
+            }
+          }
+          return '';
+        }
+
+        function uuid() {
+          var uuid = '', i, random;
+          for (i = 0; i < 15; i++) {
+            random = Math.random() * 10 | 0;
+              uuid += random;
+          }
+          return uuid;
+        }
+
+        if (getCookieForTD('unique_id') == '') {
+          var date, expires;
+          date = new Date();
+          date.setTime(date.getTime() + 2*356*24*60*60*1000); // 二年有効
+          expires = date.toGMTString();
+          document.cookie = 'unique_id=' + uuid() + ' ; path=/; expires=' + expires;
+        }
+    new Fingerprint2().get(function(result, components) {
+      var fp = result;
+      td.set('h_td_pageviews', 
+        {
+          uniqueId: getCookieForTD('unique_id'),
+          group_admin_id: getCookieForTD('group_admin_id'),
+          shop_org_id: getCookieForTD('shop_org_id'),
+          fingerprint: fp,
+          page: 'spmanager'
+        }
+      );
+      td.trackPageview('h_td_pageviews');
+    });
+    }
+    </script>
+    
+
+				<style>
+div#header div#global ul#navigation li.head-menu {
+    width: 25%;
+    height: 50px;
+    display: block;
+    float: left;
+    text-align: center;
+    background-color: #E1E1E1;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#E1E1E1));
+    background: -moz-linear-gradient(center top, #FFFFFF, #E1E1E1) repeat scroll 0 0 transparent;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#E1E1E1);
+    border-left: 1px solid #BBBBBB;
+    border-bottom: 1px solid #BBBBBB;
+    box-sizing: border-box;
+    text-align: center;
+}
+div#header div#global ul#navigation li a img.head-link-img {
+    width: 60px;
+    height: auto;
+    margin: 8px auto -4px;
+    display: inline-block;
+}
+div#header div#global ul#navigation li.stay {
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    border-bottom: 1px none #FFFFFF;
+    border-left: 0px none #BBBBBB;
+}
+span.cnt-bg {
+    background: #e00;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 100%;
+    margin-left: 2px;
+    font-size: 11px;
+    text-align: center;
+}
+div#header div#global ul#navigation li.head-menu.reserve {
+    background: #fff;
+}
+</style>
+<div id="header">
+	<div id="global">
+		<div id="navi">
+			<ul id="navigation">
+                				<li class="head-menu stay">
+                					<a class="header-link" href="/H1Main.php?shopdir=cb_hitozuma_mitsu" id="shopManage">
+                                        <img class="head-link-img" src="/img/spmanager/header/header_menu1.png">
+                                            <div></div>
+						<span class="head-link-txt">店舗管理</span>
+                        					</a>
+				</li>
+                                                <li class="head-menu">
+                                    <a class="header-link" href="/R1ReservationLogin.php?shopdir=cb_hitozuma_mitsu" target="_blank">
+                        <img class="head-link-img" src="/img/spmanager/header/header_menu_reserve.jpg">
+                        <div></div>
+                        <span class="head-link-txt no-requruit">予約管理</span>
+                                                <span class="cnt-bg">1</span>
+                                            </a>
+                </li>
+                            				<li class="head-menu">
+					<a class="header-link" id="reqappmenushow">
+                        <img class="head-link-img" src="/img/spmanager/header/header_menu2_f2.png">
+                        <div></div>
+						<span class="head-link-txt no-requruit">求人管理</span>
+                        					</a>
+				</li>
+            				<li class="head-menu ">
+					<a class="header-link" href="/HBAdminMessageReceiveTop.php?shopdir=cb_hitozuma_mitsu" id="oshirase">
+                                        <img class="head-link-img" src="/img/spmanager/header/header_menu3_f2.png">
+                                            <div></div>
+						<span class="head-link-txt">お知らせ</span>
+						                        <span class="cnt-bg">21</span>											</a>
+				</li>
+			</ul>
+		</div>
+		<div id="navi_dummy"></div>
+	</div>
+</div>
+<div class="req-app-launch"><iframe id="req_launch_frame"></iframe></div>
+		
+		<div id="home" data-theme="d" data-role="page" data-url="home" tabindex="0" class="ui-page ui-body-d ui-page-active" style="min-height: 1080px;">
+
+						<div id="top_area">
+	<div class="clr">
+		<div class="logobutton">
+				<img class="logo" src="/img/spmanager/header/logo/header_mini.png" height="30px">
+			<a href="javascript:siteChange()" class="ui-link"><div style="display:inline;height:30px;"> <img id="site_change_icon" src="/img/spmanager/header/site_change.png" height="30px"></div></a> 		</div>
+		<div id="navigation2">
+			<div id="name">人妻の蜜　西船橋店様</div>
+			<a href="https://smart.cityheaven.net/cb/hitozuma_mitsu" class="under-line txt12" data-role="none">お店ページ</a> | <a id="open-menu" class="open-menu under-line txt12 ui-link">メニュー</a>
+		</div>
+	</div>
+		<div id="site-change" style="display:none;">
+				        <a href="http://manager.mensheaven.jp/top_menus/?cmid=2500000713&amp;siteid=17" target="_blank" class="site_change_btn ui-link">男子求人管理画面</a>
+			</div>
+	</div>
+			                        <div class="header_himedeco">
+                <div class="header_himedeco_inner">
+                    <div class="header_himedeco_texts">
+                        <div class="header_himedeco_header">
+                                                60%達成でターゲットキテネ+1回
+                                                </div>
+                                                <div class="menu_himedeco_graphBottomText">※現在40%達成特典まで取得済み(2025.01.17)</div>
+                                                <div class="header_himedeco_girlData">
+                            <span class="_integrated">統合済みの女の子:50人</span>
+                            <span class="_unintegrated">未統合の女の子:57人</span>
+                        </div>
+                    </div>
+                    <div class="header_himedeco_graph">
+                        <canvas id="header_himedeco_graph_cvs" width="100" height="100"></canvas>
+                        <div class="header_himedeco_graph_text">
+                            <span class="_nam">46<span class="_percent">%</span></span>
+                        </div>
+                    </div>
+
+                    <div class="header_himedeco_caution">
+                        ※過去30日以内にログインした女の子が対象
+                    </div>
+                </div>
+            </div>
+            
+                <style>
+                .header_himedeco {
+                    padding: 8px;
+                    box-sizing: border-box;
+                    background: #DDDDDD;
+                }
+                .header_himedeco_inner {
+                    padding: 16px;
+                    box-sizing: border-box;
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    display: flex;
+                    max-width: 370px;
+                    margin: 0 auto;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                .header_himedeco_texts{
+                    width: calc(100% - 100px);
+                }
+                .header_himedeco_header {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #FF1766;
+                    line-height: 1.25em;
+                    word-break: auto-phrase;
+                }
+                .header_himedeco_headerBottomText {
+                    font-size: 11px;
+                    line-height: 1.25em;
+                    margin-bottom: 4px;
+                }
+                .header_himedeco_graph {
+                    margin-bottom: 8px;
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                }
+                #header_himedeco_graph_cvs {
+                    width: 100px;
+                    height: 100px;
+                }
+                .header_himedeco_graph_text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                }
+                .header_himedeco_graph_text>._nam {
+                    font-size: 28px;
+                    font-weight: bold;
+                    color: #FF1766;
+                    line-height: 1;
+                }
+                .header_himedeco_graph_text>._nam>._percent {
+                    font-size: 14px;
+                }
+                .header_himedeco_girlData {
+                    display: flex;
+                    margin-bottom: 8px;
+                    flex-direction: column;
+                    font-size: 12px;
+                }
+                .header_himedeco_girlData>._integrated {
+                    font-weight: bold;
+                    color: #555;
+                }
+                .header_himedeco_girlData>._unintegrated {
+                    color: #555;
+                }
+                .header_himedeco_caution {
+                    font-size: 11px;
+                    color: #F00;
+                    line-height: 1.25em;
+                    text-align: right;
+                    width: 100%;
+                }
+                </style>
+            
+            <script>
+                window.addEventListener('DOMContentLoaded', function() {
+                    girls_graph();
+                });
+
+                document.addEventListener("visibilitychange", () => {
+                    if (document.visibilityState === "visible") {
+                        girls_graph();
+                    }
+                });
+
+                function girls_graph() {
+                    const canvas = document.getElementById("header_himedeco_graph_cvs");
+                    const integrate_rate = 46; //統合率
+                    const graph_radius = 40; //半径
+                    let angle = 360 * integrate_rate / 100;
+                    let ctx = canvas.getContext('2d');
+
+                    // メモリ上のキャンバスを作成
+                    const inMemCanvas = document.createElement('canvas');
+                    const inMemCtx = inMemCanvas.getContext('2d');
+                    inMemCanvas.width = canvas.width;
+                    inMemCanvas.height = canvas.height;
+                    inMemCtx.clearRect(0, 0, inMemCanvas.width, inMemCanvas.height);
+
+                    // 回転
+                    inMemCtx.translate(inMemCanvas.width / 2, inMemCanvas.height / 2);
+                    inMemCtx.rotate(270 * Math.PI / 180);
+                    inMemCtx.translate(-inMemCanvas.width / 2, -inMemCanvas.height / 2);
+
+                    // ゲージ背景
+                    inMemCtx.strokeStyle = "#ACACAC";
+                    inMemCtx.lineWidth = 15;
+                    inMemCtx.beginPath();
+                    inMemCtx.arc(inMemCanvas.width / 2, inMemCanvas.height / 2, graph_radius, 0, 360, false);
+                    inMemCtx.stroke();
+
+                    // ゲージ
+                    inMemCtx.strokeStyle = "#FF1766";
+                    inMemCtx.beginPath();
+                    inMemCtx.arc(inMemCanvas.width / 2, inMemCanvas.height / 2, graph_radius, 0, Math.PI / 180 * angle, false);
+                    inMemCtx.stroke();
+
+                    // メモリ
+                    inMemCtx.strokeStyle = "#FFFFFF";
+                    for (let i = 0; i <= 5; i++) {
+                        let start_angle = 360 * ((20 * i) - 0.25) / 100;
+                        let end_angle = 360 * ((20 * i) + 0.25) / 100;
+                        let start = Math.PI / 180 * start_angle;
+                        let end = Math.PI / 180 * end_angle;
+                        inMemCtx.beginPath();
+                        inMemCtx.arc(inMemCanvas.width / 2, inMemCanvas.height / 2, graph_radius, start, end, false);
+                        inMemCtx.stroke();
+                    }
+
+                    // メモリ上の内容を本体のキャンバスに描画
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(inMemCanvas, 0, 0);
+                }
+            </script>
+            			<div id="manager-top">
+				<div class="last-update-txt">最終更新日時&nbsp;［&nbsp;2025/12/17 02:00&nbsp;］</div>
+                
+                				
+								
+				<style>
+.shift-notice {
+    width: 84%;
+    margin: 16px auto;
+}
+a.shift-link.ui-link {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 5px;
+    border: 4px solid #f04f4f;
+    box-shadow: 0 2px rgba(0,0,0,0.2);
+}
+.shift-text {
+    color: #f04f4f;
+    font-weight: bold;
+    padding: 0 8px;
+}
+span.shift-count {
+    display: block;
+    padding: 4px 8px;
+    background: #f04f4f;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+}
+</style>
+										
+						
+					<a href="./H8ReviewList.php?shopdir=cb_hitozuma_mitsu" class="ui-link">
+				<div id="unread_review_button">
+					<span id="left-field">未読の口コミがあります</span>
+					<div id="right-field">
+						<div id="triangle_wrap"><div id="triangle"></div></div>
+						<span id="right-text">1件</span>
+					</div>
+				</div>
+			</a>
+		
+				                                													<div class="home-menu clr">
+						<ul class="home-menu-ul">
+																																																																											<li class="manager-line menu-right-line menu-bottom-line">
+                                                                                <a href="#" class="manager-list menu-link ui-link" onclick="confirm('最終更新日時を更新します。\nよろしいですか？')&amp;&amp;document.form.submit();">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/menulist_update.png" class="menu-size"></div>
+												<div class="txt">
+													更新ボタン
+																																									<br><span class="count">残り21/24回</span>
+																																											<form method="get" name="form" action="/H1Main.php?shopdir=cb_hitozuma_mitsu"><input type="hidden" name="_token__" value="4e1ea20afce3da59e3ec978a36d38c08">
+																<input type="hidden" name="update" value="y">
+															</form>
+																																							</div>
+											</div>
+										</a>
+									</li>
+																																																		<li class="manager-line menu-right-line menu-bottom-line">
+                                                                                <a href="javascript:void(0);" class="manager-list menu-link ui-link" onclick="alert('PCマネージャでの実施をお願いします。');">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/menulist_sokuhime.png" class="menu-size"></div>
+												<div class="txt">
+													即ヒメ
+																											<br><span class="count">5人登録中</span>
+																									</div>
+											</div>
+										</a>
+									</li>
+																																																		<li class="manager-line menu-bottom-line">
+                                                                                <a href="javascript:void(0);" class="manager-list menu-link ui-link" onclick="alert('PCマネージャでの実施をお願いします。');">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/menulist_shukkinentry.png" class="menu-size"></div>
+												<div class="txt">
+													本日出勤
+																											<br><span class="count">本日24人</span>
+																									</div>
+											</div>
+										</a>
+									</li>
+																																																																					<li class="manager-line menu-right-line menu-bottom-line">
+                                                                                <a href="/H2TokeiShop.php?shopdir=cb_hitozuma_mitsu" class="manager-list menu-link ui-link">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/menulist_access.png" class="menu-size"></div>
+												<div class="txt">
+													アクセス解析
+																									</div>
+											</div>
+										</a>
+									</li>
+																																																		<li class="manager-line menu-right-line menu-bottom-line">
+                                                                                <a href="/H2EventList.php?shopdir=cb_hitozuma_mitsu" class="manager-list menu-link ui-link">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/menulist_event.png" class="menu-size"></div>
+												<div class="txt">
+													イベント
+																									</div>
+											</div>
+										</a>
+									</li>
+																																																		<li class="manager-line menu-bottom-line">
+                                                                                <a href="/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu" class="manager-list menu-link ui-link">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/menulist_diary.png" class="menu-size"></div>
+												<div class="txt">
+													写メ日記
+																									</div>
+											</div>
+										</a>
+									</li>
+																																																																					<li class="manager-line menu-right-line ">
+                                                                                <a href="/H2FirstTimeQA.php?shopdir=cb_hitozuma_mitsu" class="manager-list menu-link ui-link">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/menulist_firsttimeqa.png" class="menu-size"></div>
+												<div class="txt">
+													はじめてQ&amp;A
+																									</div>
+											</div>
+										</a>
+									</li>
+																					</ul>
+					</div>
+				                
+				<div class="top-menu box clr">
+					<table class="top-menu-table">
+						<tbody><tr>
+							<td class="top-menu-cell right-line">
+								<a id="open-menu" class="top-menu-link open-menu ui-link">
+									<div class="top-menu-block">
+										<img src="/img/spmanager/footer/footer_menu1.png" class="top-menu-img">
+										<div class="top-menu-txt">MENU一覧</div>
+									</div>
+								</a>
+							</td>
+							<td class="top-menu-cell">
+								<a href="/H1HomeMenuSetting.php?shopdir=cb_hitozuma_mitsu" class="top-menu-link right ui-link">
+									<div class="top-menu-block">
+										<img src="/img/spmanager/footer/footer_menu2.png" class="top-menu-img">
+										<div class="top-menu-txt">HOME設定</div>
+									</div>
+								</a>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+                
+			</div>
+
+						<div id="footer" class="top-border">
+		<div data-role="fieldcontain" class="box txt-center ui-field-contain ui-body ui-br">
+		        <div style="padding-bottom: 7px;"><a href="http://smart.cityheaven.net/guideline_sp.html" target="_blank" class="footer-link ui-link">情報掲載に関するお願い</a></div>
+    <a class="footer-link ui-link" href="mailto:shop@cityheaven.net?shopdir=cb_hitozuma_mitsu">サポートに質問する</a>&nbsp;|&nbsp;
+		<a class="footer-link ui-link" href="/H1Login.php?shopdir=cb_hitozuma_mitsu" id="logout" onclick="return confirm('ログアウトします。\nよろしいですか?')">ログアウト</a>
+	</div>
+</div>
+			
+		</div>
+
+		
+
+				<div id="menu-list" style="display: none;">
+	<div id="title">
+		<span class="menu-title">MENU一覧</span>
+		<div id="menu-close">
+			<a id="close-menu" class="close-menu">閉じる</a>
+		</div>
+	</div>
+	<div id="menu">
+		<div id="menu-caption">店舗ページの更新・変更</div>
+		<ul id="menu-list">
+			<li class="half-li">
+									<form method="post" name="update_cnt" action="/H1Main.php#open-menu?shopdir=cb_hitozuma_mitsu"><input type="hidden" name="_token__" value="4e1ea20afce3da59e3ec978a36d38c08">
+						<input type="hidden" name="updatemenu" value="21">
+						<input type="hidden" name="updatemenulist" value="更新する">
+						<a onclick="confirm('最終更新日時を更新します。\nよろしいですか？')&amp;&amp;document.update_cnt.submit();" class="menu-list-link menu-counter">カウンターの更新</a>
+					</form>
+							</li>
+						<li class="half-li">
+				<a href="/H2ShopIntroduction.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-shopshokai">お店情報</a>
+			</li>
+												<li class="half-li">
+				<a href="/H2EventList.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-event">イベント</a>
+			</li>
+										<li class="half-li">
+					<a href="/H3KeitaiDecoMain.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-deco">デコオプション</a>
+				</li>
+						<li class="half-li">
+				<a href="/H2TokeiShop.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-access">アクセス解析</a>
+			</li>
+			<li class="half-li">
+				<a href="/H8ReviewList.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-review">口コミ</a>
+			</li>
+						<li class="half-li">
+				<a href="/H2FirstTimeQA.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-firsttimeqa">はじめてQ&amp;A</a>
+			</li>
+					</ul>
+        <div id="menu-caption">出勤情報</div>
+		<ul id="menu-list">
+			<li class="half-li">
+                                <a href="javascript:void(0);" class="menu-list-link menu-syukkinentry" onclick="alert('PCマネージャでの実施をお願いします。');">出勤登録</a>
+                			</li>
+            <li class="half-li">
+                				                                                				<a href="javascript:void(0);" class="menu-list-link menu-sokuhime" onclick="alert('PCマネージャでの実施をお願いします。');">即ヒメ</a>
+                			</li>
+            <li class="half-li">
+                                <a href="javascript:void(0);" class="menu-list-link menu-syukkinentry" onclick="alert('PCマネージャでの実施をお願いします。');">出勤申請</a>
+                			</li>
+		</ul>
+        			                                		<ul id="menu-list">
+            										                                                                                                    																													
+	                    		        	        		</ul>
+						<div id="menu-caption">女の子情報</div>
+				<ul id="menu-list">
+			<li class="half-li">
+                				                                                				<a href="javascript:void(0);" class="menu-list-link menu-girllist" onclick="alert('PCマネージャでの実施をお願いします。');">女の子</a>
+                			</li>
+									<li class="half-li">
+                                <a href="javascript:void(0);" class="menu-list-link menu-mypage" onclick="alert('PCマネージャでの実施をお願いします。');">マイページ</a>
+                			</li>
+			<li class="half-li">
+				<a href="/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-diary">写メ日記</a>
+			</li>
+						            				<li class="half-li">
+					<a href="/H8OkiniTalkManager.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-okinitalk">オキニトーク</a>
+				</li>
+                		</ul>
+		<div id="menu-caption">サポート</div>
+							</div>
+</div>
+<div id="appmenu-list" style="display: none;">
+	<div id="menu">
+        <a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j" data-theme="j" data-role="button" onclick="appExistChk('heaven:///', '', '', 'http://spmanager.cityheaven.net/H1Main_3831455342486170394351594e724a7262766457476b412f755752454462692f49757051444744467674773d')">
+			<span class="ui-btn-text">アプリを起動する</span>
+		</a>
+		<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j" data-theme="j" data-role="button" onclick="launchStore('')">
+			<span class="ui-btn-text">アプリダウンロードページへ</span>
+		</a>
+		<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n" data-role="button" id="appmenuclose">
+			<span class="ui-btn-text2">キャンセル</span>
+		</a>
+		<div class="app-launch"><iframe id="launch_frame"></iframe></div>
+	</div>
+</div>
+<div id="reqappmenu-list" style="display: none;">
+	<div id="menu">
+						<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j" data-theme="j" data-role="button" onclick="launchReqWeb('https://cfsmart.girlsheaven-job.net/manager/account_3831455342486170394351594e724a7262766457476b412f755752454462692f49757051444744467674773d')">
+					<span class="ui-btn-text">求人管理へ移動する</span>
+		</a>
+												<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n" data-role="button" id="reqappmenuclose">
+			<span class="ui-btn-text2">キャンセル</span>
+		</a>
+																	</div>
+</div>
+		
+				<div id="footerHelpMes" style="display: none;">
+	<div class="box">
+		<a id="footerHelpClose" class="position-right"><img src="/img/spmanager/icon/help_close.png"></a>
+	</div>
+	<div>
+		<iframe name="footerHelp" frameborder="0" scrolling="no" class="w100" src="help/footer_help.html">
+		</iframe>
+	</div>
+</div>		
+	
+<div class="ui-loader ui-body-a ui-corner-all" style="top: 540px; display: none;"><span class="ui-icon ui-icon-loading spin"></span><h1>loading</h1></div></body></html>

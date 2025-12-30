@@ -1,0 +1,309 @@
+{
+  "timestamp": "2025-12-26T04:08:01.730Z",
+  "elements": [
+    {
+      "tag": "a",
+      "text": "店舗管理",
+      "href": "/H1Main.php?shopdir=cb_idolgakuen_f",
+      "id": "shopManage",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "予約管理",
+      "href": "/R1ReservationLogin.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "求人管理",
+      "href": "",
+      "id": "reqappmenushow",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "お知らせ\n\t\t\t\t\t\t                        21",
+      "href": "/HBAdminMessageReceiveTop.php?shopdir=cb_idolgakuen_f",
+      "id": "oshirase",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "お店ページ",
+      "href": "https://smart.cityheaven.net/cb/idolgakuen_f",
+      "id": "",
+      "class": "under-line txt12",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "メニュー",
+      "href": "",
+      "id": "open-menu",
+      "class": "open-menu under-line txt12 ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "男子求人管理画面",
+      "href": "http://manager.mensheaven.jp/top_menus/?cmid=2510055906&siteid=17",
+      "id": "",
+      "class": "site_change_btn ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "お店紹介",
+      "href": "/H2ShopIntroduction.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "manager-list menu-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "トピックス",
+      "href": "/H2Topic.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "manager-list menu-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "基本情報確認",
+      "href": "/H2Shop.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "manager-list menu-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "閉じる",
+      "href": "",
+      "id": "tooltipclose",
+      "class": "close-btn ui-link",
+      "type": ""
+    },
+    {
+      "tag": "input",
+      "text": "更新する",
+      "href": "",
+      "id": "",
+      "class": "ui-btn-hidden",
+      "type": "submit"
+    },
+    {
+      "tag": "a",
+      "text": "MENU一覧",
+      "href": "",
+      "id": "open-menu",
+      "class": "top-menu-link open-menu ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "HOMEへ戻る",
+      "href": "/H1Main.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "top-menu-link right ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "情報掲載に関するお願い",
+      "href": "http://smart.cityheaven.net/guideline_sp.html",
+      "id": "",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "Ｑ＆Ａ",
+      "href": "https://www.hgjn-help.com/?site_domain=Admin_faq",
+      "id": "",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "サポートに質問する",
+      "href": "mailto:shop@cityheaven.net?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "ログアウト",
+      "href": "/H1Login.php?shopdir=cb_idolgakuen_f",
+      "id": "logout",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "閉じる",
+      "href": "",
+      "id": "close-menu",
+      "class": "close-menu",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "カウンターの更新",
+      "href": "",
+      "id": "",
+      "class": "menu-list-link menu-counter",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "お店情報",
+      "href": "/H2ShopIntroduction.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-shopshokai",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "イベント",
+      "href": "/H2EventList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-event",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "デコオプション",
+      "href": "/H3KeitaiDecoMain.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-deco",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "アクセス解析",
+      "href": "/H2TokeiShop.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-access",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "口コミ",
+      "href": "/H8ReviewList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-review",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "はじめてQ&A",
+      "href": "/H2FirstTimeQA.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-firsttimeqa",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "出勤登録",
+      "href": "/H7ShukkinNoteList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-syukkinentry",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "即ヒメ",
+      "href": "/H9StandbyGirlRegist.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-sokuhime",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "出勤申請",
+      "href": "/H7ShiftManagement.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-syukkinentry",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "女の子",
+      "href": "/H2GirlList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-girllist",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "マイページ",
+      "href": "/H8GirlMyPageSetting.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-mypage",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "写メ日記",
+      "href": "/H8KeitaiDiaryList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-diary",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "オキニトーク",
+      "href": "/H8OkiniTalkManager.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-okinitalk",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "アプリを起動する",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "アプリダウンロードページへ",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "appmenuclose",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "求人管理へ移動する",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "reqappmenuclose",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n",
+      "type": ""
+    }
+  ]
+}

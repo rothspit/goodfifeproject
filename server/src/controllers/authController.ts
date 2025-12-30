@@ -31,7 +31,7 @@ export const register = async (req: Request, res: Response) => {
         db.run(
           'INSERT INTO users (phone_number, password, name, email) VALUES (?, ?, ?, ?)',
           [phone_number, hashedPassword, name || null, email || null],
-          function (err) {
+          function (this: any, err: any) {
             if (err) {
               return res.status(500).json({ message: 'ユーザー登録に失敗しました' });
             }
@@ -65,6 +65,7 @@ export const register = async (req: Request, res: Response) => {
 
 export const login = async (req: Request, res: Response) => {
   try {
+    console.log('🔐 ログインリクエスト受信:', req.body);
     const { phone_number, password } = req.body;
 
     if (!phone_number || !password) {
@@ -100,7 +101,7 @@ export const login = async (req: Request, res: Response) => {
           { expiresIn: '30d' }
         );
 
-        res.json({
+        const response = {
           message: 'ログインしました',
           token,
           user: {
@@ -108,8 +109,12 @@ export const login = async (req: Request, res: Response) => {
             phone_number: user.phone_number,
             name: user.name,
             email: user.email,
+            role: user.role || 'user',
           },
-        });
+        };
+        
+        console.log('✅ ログイン成功レスポンス:', response);
+        res.json(response);
       }
     );
   } catch (error) {

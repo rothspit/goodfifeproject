@@ -1,0 +1,38 @@
+{
+  "url": "https://spmanager.cityheaven.net/H8KeitaiDiaryList.php",
+  "timestamp": "2025-12-25T20:52:28.684Z",
+  "inputs": [
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "",
+      "id": "message",
+      "placeholder": "",
+      "value": ""
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "_token__",
+      "id": "",
+      "placeholder": "",
+      "value": "112e4280e9d7542b0e3f37905aa57b17"
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "updatemenu",
+      "id": "",
+      "placeholder": "",
+      "value": "16"
+    },
+    {
+      "tag": "input",
+      "type": "hidden",
+      "name": "updatemenulist",
+      "id": "",
+      "placeholder": "",
+      "value": "更新する"
+    }
+  ]
+}

@@ -12,7 +12,13 @@ export const setupSocketHandlers = (io: Server) => {
   io.use((socket: UserSocket, next) => {
     const token = socket.handshake.auth.token;
 
+    console.log('🔐 Socket.IO auth check:', { 
+      hasToken: !!token, 
+      namespace: socket.nsp.name 
+    });
+
     if (!token) {
+      console.error('❌ Socket.IO: No token provided');
       return next(new Error('認証トークンがありません'));
     }
 
@@ -24,18 +30,50 @@ export const setupSocketHandlers = (io: Server) => {
 
       socket.userId = decoded.userId;
       socket.userType = decoded.userType;
+      console.log('✅ Socket.IO auth success:', { userId: decoded.userId, userType: decoded.userType });
       next();
     } catch (error) {
-      next(new Error('無効な認証トークンです'));
+      console.error('❌ Socket.IO auth failed:', error);
+      return next(new Error('無効な認証トークンです'));
     }
   });
 
   io.on('connection', (socket: UserSocket) => {
-    console.log(`ユーザー接続: ${socket.userId} (${socket.userType})`);
+    console.log(`✅ ユーザー接続: ${socket.userId} (${socket.userType}) - Namespace: ${socket.nsp.name}`);
 
     // ユーザーをルームに参加させる
     const roomId = `${socket.userType}_${socket.userId}`;
     socket.join(roomId);
+    console.log(`📍 User joined room: ${roomId}`);
+
+    // 管理者の場合は admin-room にも参加（CTI着信通知用）
+    if (socket.userType === 'user' && socket.userId) {
+      // ユーザーのロールを確認（非同期処理）
+      (async () => {
+        try {
+          const user: any = await new Promise((resolve, reject) => {
+            db.get(
+              'SELECT role FROM users WHERE id = ?',
+              [socket.userId],
+              (err: any, row: any) => {
+                if (err) reject(err);
+                else resolve(row);
+              }
+            );
+          });
+
+          if (user && user.role === 'admin') {
+            socket.join('admin-room');
+            console.log(`🎫 管理者がadmin-roomに参加: ${socket.userId}`);
+            socket.emit('joined_admin_room', { success: true });
+          } else {
+            console.log(`👤 User ${socket.userId} role: ${user?.role || 'unknown'} (not admin)`);
+          }
+        } catch (error) {
+          console.error('❌ Error checking user role:', error);
+        }
+      })();
+    }
 
     // チャット履歴を取得
     socket.on('get_chat_history', (data: { partnerId: number; partnerType: 'user' | 'cast' }) => {

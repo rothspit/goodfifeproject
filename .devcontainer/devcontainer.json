@@ -1,0 +1,33 @@
+{
+  "name": "人妻の蜜 開発環境",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "forwardPorts": [3000, 5000],
+  "portsAttributes": {
+    "3000": {
+      "label": "クライアント (Next.js)",
+      "onAutoForward": "notify"
+    },
+    "5000": {
+      "label": "サーバー (API)",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "cd server && npm install && cd ../client && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}

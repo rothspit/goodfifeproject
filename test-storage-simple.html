@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storage Test</title>
+</head>
+<body>
+    <h1>Simple Storage Test</h1>
+    <div id="results"></div>
+    <script>
+        const results = [];
+        
+        // Test 1: Basic write/read
+        localStorage.setItem('test1', 'value1');
+        const test1 = localStorage.getItem('test1');
+        results.push(`Test 1 - Basic write/read: ${test1 === 'value1' ? 'PASS' : 'FAIL'}`);
+        
+        // Test 2: Simulate login data
+        const token = 'test_token_123';
+        const user = JSON.stringify({id: 1, phone: '123'});
+        localStorage.setItem('token', token);
+        localStorage.setItem('user', user);
+        
+        const savedToken = localStorage.getItem('token');
+        const savedUser = localStorage.getItem('user');
+        results.push(`Test 2 - Token saved: ${savedToken === token ? 'PASS' : 'FAIL'}`);
+        results.push(`Test 2 - User saved: ${savedUser === user ? 'PASS' : 'FAIL'}`);
+        
+        // Test 3: Navigate and check
+        results.push(`Test 3 - About to redirect to check persistence...`);
+        results.push(`<a href="#" onclick="window.location.href='test-storage-check.html'; return false;">Click to check if data persists</a>`);
+        
+        document.getElementById('results').innerHTML = results.join('<br>');
+    </script>
+</body>
+</html>

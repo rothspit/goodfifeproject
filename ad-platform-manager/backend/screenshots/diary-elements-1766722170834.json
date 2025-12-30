@@ -1,0 +1,549 @@
+{
+  "timestamp": "2025-12-26T04:09:30.834Z",
+  "elements": [
+    {
+      "tag": "a",
+      "text": "店舗管理",
+      "href": "/H1Main.php?shopdir=cb_idolgakuen_f",
+      "id": "shopManage",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "予約管理",
+      "href": "/R1ReservationLogin.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "求人管理",
+      "href": "",
+      "id": "reqappmenushow",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "お知らせ\n\t\t\t\t\t\t                        21",
+      "href": "/HBAdminMessageReceiveTop.php?shopdir=cb_idolgakuen_f",
+      "id": "oshirase",
+      "class": "header-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "お店ページ",
+      "href": "https://smart.cityheaven.net/cb/idolgakuen_f",
+      "id": "",
+      "class": "under-line txt12",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "メニュー",
+      "href": "",
+      "id": "open-menu",
+      "class": "open-menu under-line txt12 ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "男子求人管理画面",
+      "href": "http://manager.mensheaven.jp/top_menus/?cmid=2510055906&siteid=17",
+      "id": "",
+      "class": "site_change_btn ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "閉じる",
+      "href": "",
+      "id": "tooltipclose",
+      "class": "close-btn ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "投稿一覧",
+      "href": "/H8KeitaiDiaryList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "manager-list menu-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "利用登録",
+      "href": "/H8KeitaiDiaryState.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "manager-list menu-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "記事を削除する",
+      "href": "/H8KeitaiDiaryDeleteList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "list-title-right-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月26日 04:17\n\t\t\t\t\t\t\t\t\t\t\t\t美海（みう）\n\t\t\t\t\t\t\t\t\t\t\t\t12月の恋🏹👶🏻🩷",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766755301&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月24日 14:27\n\t\t\t\t\t\t\t\t\t\t\t\t香凛（かりん）\n\t\t\t\t\t\t\t\t\t\t\t\t開発されました…",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766374453&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月24日 12:07\n\t\t\t\t\t\t\t\t\t\t\t\t香凛（かりん）\n\t\t\t\t\t\t\t\t\t\t\t\tえっちなサンタさんだよ🎅...",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766342973&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月24日 05:17\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t退勤💌💭",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766263812&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月24日 02:17\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766252787&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月24日 01:27\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766251533&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月23日 20:47\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tみてみて",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766191650&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月23日 18:57\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tあげまんです！笑",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766173126&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月23日 07:07\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tおはよう😆",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766007846&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月23日 05:07\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t退勤💌💭",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=766001976&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月23日 01:37\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765984298&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月22日 21:37\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t声我慢大会しよ！",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765916259&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月22日 18:47\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t舐め合わない？",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765871973&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月22日 06:07\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t退勤💌💭",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765762698&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月22日 05:37\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765759438&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月22日 03:27\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765757038&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 23:37\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t1人は寂しいの❤️",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765732267&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 23:17\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765728873&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 22:57\n\t\t\t\t\t\t\t\t\t\t\t\tいのり\n\t\t\t\t\t\t\t\t\t\t\t\tぺろっ",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765726256&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 21:37\n\t\t\t\t\t\t\t\t\t\t\t\t希美（のぞみ）\n\t\t\t\t\t\t\t\t\t\t\t\t動くよ🎥",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765713695&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 21:17\n\t\t\t\t\t\t\t\t\t\t\t\tいのり\n\t\t\t\t\t\t\t\t\t\t\t\tぎりぎり",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765711076&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 20:37\n\t\t\t\t\t\t\t\t\t\t\t\tいのり\n\t\t\t\t\t\t\t\t\t\t\t\tあかしろ",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765679701&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 18:27\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t今日もいいこにしてたよ💕",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765633674&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 17:27\n\t\t\t\t\t\t\t\t\t\t\t\tいのり\n\t\t\t\t\t\t\t\t\t\t\t\tきょうもしゅっ",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765603930&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 16:37\n\t\t\t\t\t\t\t\t\t\t\t\t希美（のぞみ）\n\t\t\t\t\t\t\t\t\t\t\t\t出勤だよ🔔",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765587194&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 16:07\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t出勤💖",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765576709&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 07:17\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tおはよう😍🩷",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765435554&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 05:42\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\t退勤💌💭",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765430044&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 05:37\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765429509&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "12月21日 02:17\n\t\t\t\t\t\t\t\t\t\t\t\t雫（しずく）\n\t\t\t\t\t\t\t\t\t\t\t\tお礼💌",
+      "href": "/H8KeitaiDiaryDetail.php?c_diary_id=765416082&shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "arrow ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "次へ",
+      "href": "/H8KeitaiDiaryList.php?shopdir=cb_idolgakuen_f&start=2",
+      "id": "",
+      "class": "page-link-n ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "MENU一覧",
+      "href": "",
+      "id": "open-menu",
+      "class": "top-menu-link open-menu ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "HOMEへ戻る",
+      "href": "/H1Main.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "top-menu-link right ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "情報掲載に関するお願い",
+      "href": "http://smart.cityheaven.net/guideline_sp.html",
+      "id": "",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "Ｑ＆Ａ",
+      "href": "https://www.hgjn-help.com/?site_domain=Admin_faq",
+      "id": "",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "サポートに質問する",
+      "href": "mailto:shop@cityheaven.net?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "ログアウト",
+      "href": "/H1Login.php?shopdir=cb_idolgakuen_f",
+      "id": "logout",
+      "class": "footer-link ui-link",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "閉じる",
+      "href": "",
+      "id": "close-menu",
+      "class": "close-menu",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "カウンターの更新",
+      "href": "",
+      "id": "",
+      "class": "menu-list-link menu-counter",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "お店情報",
+      "href": "/H2ShopIntroduction.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-shopshokai",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "イベント",
+      "href": "/H2EventList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-event",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "デコオプション",
+      "href": "/H3KeitaiDecoMain.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-deco",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "アクセス解析",
+      "href": "/H2TokeiShop.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-access",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "口コミ",
+      "href": "/H8ReviewList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-review",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "はじめてQ&A",
+      "href": "/H2FirstTimeQA.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-firsttimeqa",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "出勤登録",
+      "href": "/H7ShukkinNoteList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-syukkinentry",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "即ヒメ",
+      "href": "/H9StandbyGirlRegist.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-sokuhime",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "出勤申請",
+      "href": "/H7ShiftManagement.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-syukkinentry",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "女の子",
+      "href": "/H2GirlList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-girllist",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "マイページ",
+      "href": "/H8GirlMyPageSetting.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-mypage",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "写メ日記",
+      "href": "/H8KeitaiDiaryList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-diary",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "オキニトーク",
+      "href": "/H8OkiniTalkManager.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-okinitalk",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "アプリを起動する",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "アプリダウンロードページへ",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "appmenuclose",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "求人管理へ移動する",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j",
+      "type": ""
+    },
+    {
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "reqappmenuclose",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n",
+      "type": ""
+    }
+  ]
+}

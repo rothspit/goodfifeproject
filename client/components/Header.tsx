@@ -3,8 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FiMenu, FiX, FiPhone, FiUser, FiLogIn } from 'react-icons/fi';
+import { notoSerifJP } from '@/lib/fonts';
 
-export default function Header() {
+interface HeaderProps {
+  storeId?: string;
+}
+
+export default function Header({ storeId }: HeaderProps = {}) {
+  const baseUrl = storeId ? `/${storeId}` : '';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,41 +47,62 @@ export default function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* ロゴ */}
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="text-2xl font-bold">
-                <span className="text-primary-600">人妻の蜜</span>
+            <Link href={storeId ? `/${storeId}` : "/"} className="flex items-center space-x-2 group">
+              <div className={`${notoSerifJP.className} text-3xl font-black tracking-wider relative`}>
+                <span className="bg-gradient-to-r from-rose-600 via-pink-600 to-rose-700 bg-clip-text text-transparent drop-shadow-lg group-hover:from-rose-700 group-hover:via-pink-700 group-hover:to-rose-800 transition-all duration-300">
+                  人妻の蜜
+                </span>
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-rose-400 to-transparent opacity-70"></span>
               </div>
             </Link>
 
             {/* デスクトップメニュー */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-8 relative z-10">
               <Link
-                href="/"
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                href={storeId ? `/${storeId}` : "/"}
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
+                onClick={(e) => {
+                  console.log('トップリンクがクリックされました');
+                }}
               >
                 トップ
               </Link>
               <Link
-                href="/casts"
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                href={`${baseUrl}/casts`}
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
+                onClick={(e) => {
+                  console.log('キャスト一覧リンクがクリックされました');
+                }}
               >
                 キャスト一覧
               </Link>
               <Link
-                href="/system"
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                href={`${baseUrl}/schedule`}
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
+              >
+                今日の出勤
+              </Link>
+              <Link
+                href={`${baseUrl}/system`}
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
               >
                 システム・料金
               </Link>
               <Link
-                href="/ranking"
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                href={`${baseUrl}/rankings`}
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
               >
                 ランキング
               </Link>
               <Link
-                href="/recruit"
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                href={`${baseUrl}/diary`}
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
+              >
+                写メ日記
+              </Link>
+              <Link
+                href={`${baseUrl}/recruit`}
+                className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
               >
                 求人情報
               </Link>
@@ -84,7 +111,7 @@ export default function Header() {
                 <>
                   <Link
                     href="/mypage"
-                    className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                    className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
                   >
                     マイページ
                   </Link>
@@ -99,13 +126,13 @@ export default function Header() {
                 <>
                   <Link
                     href="/login"
-                    className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                    className="text-gray-700 hover:text-primary-600 transition-colors font-medium cursor-pointer"
                   >
                     ログイン
                   </Link>
                   <Link
                     href="/register"
-                    className="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors font-medium"
+                    className="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors font-medium cursor-pointer"
                   >
                     新規登録
                   </Link>
@@ -128,36 +155,50 @@ export default function Header() {
           <div className="md:hidden bg-white border-t">
             <nav className="container mx-auto px-4 py-4 space-y-4">
               <Link
-                href="/"
-                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2"
+                href={storeId ? `/${storeId}` : "/"}
+                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 トップ
               </Link>
               <Link
-                href="/casts"
-                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2"
+                href={`${baseUrl}/casts`}
+                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 キャスト一覧
               </Link>
               <Link
-                href="/system"
-                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2"
+                href={`${baseUrl}/schedule`}
+                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                今日の出勤
+              </Link>
+              <Link
+                href={`${baseUrl}/system`}
+                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 システム・料金
               </Link>
               <Link
-                href="/ranking"
-                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2"
+                href={`${baseUrl}/rankings`}
+                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 ランキング
               </Link>
               <Link
-                href="/recruit"
-                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2"
+                href={`${baseUrl}/diary`}
+                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                写メ日記
+              </Link>
+              <Link
+                href={`${baseUrl}/recruit`}
+                className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 求人情報
@@ -167,7 +208,7 @@ export default function Header() {
                 <>
                   <Link
                     href="/mypage"
-                    className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2"
+                    className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     マイページ
@@ -186,14 +227,14 @@ export default function Header() {
                 <>
                   <Link
                     href="/login"
-                    className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2"
+                    className="block text-gray-700 hover:text-primary-600 transition-colors font-medium py-2 cursor-pointer"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     ログイン
                   </Link>
                   <Link
                     href="/register"
-                    className="block bg-primary-600 text-white px-6 py-3 rounded-full hover:bg-primary-700 transition-colors font-medium text-center"
+                    className="block bg-primary-600 text-white px-6 py-3 rounded-full hover:bg-primary-700 transition-colors font-medium text-center cursor-pointer"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     新規登録
@@ -219,7 +260,7 @@ export default function Header() {
           {isLoggedIn ? (
             <Link
               href="/mypage"
-              className="flex flex-col items-center justify-center space-y-1 text-gray-700 hover:text-primary-600"
+              className="flex flex-col items-center justify-center space-y-1 text-gray-700 hover:text-primary-600 cursor-pointer"
             >
               <FiUser size={24} />
               <span className="text-xs font-medium">マイページ</span>
@@ -228,14 +269,14 @@ export default function Header() {
             <>
               <Link
                 href="/register"
-                className="flex flex-col items-center justify-center space-y-1 text-gray-700 hover:text-primary-600"
+                className="flex flex-col items-center justify-center space-y-1 text-gray-700 hover:text-primary-600 cursor-pointer"
               >
                 <FiUser size={24} />
                 <span className="text-xs font-medium">新規登録</span>
               </Link>
               <Link
                 href="/login"
-                className="flex flex-col items-center justify-center space-y-1 text-gray-700 hover:text-primary-600"
+                className="flex flex-col items-center justify-center space-y-1 text-gray-700 hover:text-primary-600 cursor-pointer"
               >
                 <FiLogIn size={24} />
                 <span className="text-xs font-medium">ログイン</span>
@@ -244,8 +285,8 @@ export default function Header() {
           )}
 
           <Link
-            href="/recruit"
-            className="flex flex-col items-center justify-center space-y-1 text-gold-600 hover:text-gold-700"
+            href={`${baseUrl}/recruit`}
+            className="flex flex-col items-center justify-center space-y-1 text-gold-600 hover:text-gold-700 cursor-pointer"
           >
             <svg
               className="w-6 h-6"

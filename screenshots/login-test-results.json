@@ -1,0 +1,173 @@
+{
+  "heavenNet": {
+    "success": true,
+    "url": "https://spmanager.cityheaven.net/H1Main.php",
+    "title": "風俗情報サイト　シティヘブンネットCMS",
+    "menuItems": [
+      {
+        "text": "店舗管理",
+        "href": "https://spmanager.cityheaven.net/H1Main.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "予約管理\n                                                2",
+        "href": "https://spmanager.cityheaven.net/R1ReservationLogin.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "求人管理",
+        "href": ""
+      },
+      {
+        "text": "お知らせ\n\t\t\t\t\t\t                        20",
+        "href": "https://spmanager.cityheaven.net/HBAdminMessageReceiveTop.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "お店ページ",
+        "href": "https://smart.cityheaven.net/cb/hitozuma_mitsu"
+      },
+      {
+        "text": "メニュー",
+        "href": ""
+      },
+      {
+        "text": "男子求人管理画面",
+        "href": "http://manager.mensheaven.jp/top_menus/?cmid=2500000713&siteid=17"
+      },
+      {
+        "text": "未読の口コミがあります\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t1件",
+        "href": "https://spmanager.cityheaven.net/H8ReviewList.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "更新ボタン\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t残り20/24回",
+        "href": "https://spmanager.cityheaven.net/H1Main.php#"
+      },
+      {
+        "text": "即ヒメ\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t5人登録中",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "本日出勤\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t本日23人",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "アクセス解析",
+        "href": "https://spmanager.cityheaven.net/H2TokeiShop.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "イベント",
+        "href": "https://spmanager.cityheaven.net/H2EventList.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "写メ日記",
+        "href": "https://spmanager.cityheaven.net/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "はじめてQ&A",
+        "href": "https://spmanager.cityheaven.net/H2FirstTimeQA.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "MENU一覧",
+        "href": ""
+      },
+      {
+        "text": "HOME設定",
+        "href": "https://spmanager.cityheaven.net/H1HomeMenuSetting.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "情報掲載に関するお願い",
+        "href": "http://smart.cityheaven.net/guideline_sp.html"
+      },
+      {
+        "text": "サポートに質問する",
+        "href": "mailto:shop@cityheaven.net?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "ログアウト",
+        "href": "https://spmanager.cityheaven.net/H1Login.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "閉じる",
+        "href": ""
+      },
+      {
+        "text": "カウンターの更新",
+        "href": ""
+      },
+      {
+        "text": "お店情報",
+        "href": "https://spmanager.cityheaven.net/H2ShopIntroduction.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "イベント",
+        "href": "https://spmanager.cityheaven.net/H2EventList.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "デコオプション",
+        "href": "https://spmanager.cityheaven.net/H3KeitaiDecoMain.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "アクセス解析",
+        "href": "https://spmanager.cityheaven.net/H2TokeiShop.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "口コミ",
+        "href": "https://spmanager.cityheaven.net/H8ReviewList.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "はじめてQ&A",
+        "href": "https://spmanager.cityheaven.net/H2FirstTimeQA.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "出勤登録",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "即ヒメ",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "出勤申請",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "女の子",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "マイページ",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "写メ日記",
+        "href": "https://spmanager.cityheaven.net/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "オキニトーク",
+        "href": "https://spmanager.cityheaven.net/H8OkiniTalkManager.php?shopdir=cb_hitozuma_mitsu"
+      },
+      {
+        "text": "アプリを起動する",
+        "href": ""
+      },
+      {
+        "text": "アプリダウンロードページへ",
+        "href": ""
+      },
+      {
+        "text": "キャンセル",
+        "href": ""
+      },
+      {
+        "text": "求人管理へ移動する",
+        "href": ""
+      },
+      {
+        "text": "キャンセル",
+        "href": ""
+      }
+    ]
+  },
+  "deliheruTown": {
+    "success": false,
+    "reason": "フィールド未検出"
+  }
+}
