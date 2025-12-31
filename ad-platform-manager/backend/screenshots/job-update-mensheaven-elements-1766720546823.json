@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-12-26T03:42:26.823Z",
+  "elements": [
+    {
+      "tag": "a",
+      "type": "",
+      "text": "ヘブンネットの管理画面",
+      "href": "http://newmanager.cityheaven.net/",
+      "id": "",
+      "class": ""
+    },
+    {
+      "tag": "a",
+      "type": "",
+      "text": "ガールズヘブンの管理画面",
+      "href": "https://manager.girlsheaven-job.net/",
+      "id": "",
+      "class": ""
+    },
+    {
+      "tag": "a",
+      "type": "",
+      "text": "ログイン",
+      "href": "javascript:void(0);",
+      "id": "login_btn",
+      "class": "btnDefault"
+    },
+    {
+      "tag": "a",
+      "type": "",
+      "text": "当社までご連絡",
+      "href": "mailto:info@mensheaven.jp",
+      "id": "",
+      "class": ""
+    },
+    {
+      "tag": "a",
+      "type": "",
+      "text": "",
+      "href": "JavaScript:void(0);",
+      "id": "",
+      "class": ""
+    },
+    {
+      "tag": "a",
+      "type": "",
+      "text": "男性高収入求人ジョブヘブン",
+      "href": "http://mensheaven.jp/",
+      "id": "",
+      "class": ""
+    }
+  ]
+}

@@ -1,6 +1,104 @@
-# 人妻の蜜 - キャバクラ予約システム
+# 人妻の蜜 - マルチ店舗対応キャバクラ予約・顧客管理システム
 
-西船橋エリアの「人妻の蜜」公式予約サイトです。
+西船橋、錦糸町、葛西、松戸の4店舗に対応した「人妻の蜜」公式予約・顧客管理サイトです。
+
+## 🆕 最新機能（2024-12-13更新）
+
+### マルチ店舗対応
+- ✅ 4店舗（西船橋、錦糸町、葛西、松戸）対応
+- ✅ 動的ルーティング：`/{store_id}/casts`, `/{store_id}/schedule` など
+- ✅ ブランドトップページ
+- ✅ 店舗別データフィルタリング
+
+### 顧客管理・受注システム（CTI連携）
+- ✅ 電話番号で顧客検索
+- ✅ 顧客・キャスト履歴管理
+- ✅ 受注モーダル（OrderModal）
+- ✅ Dialpad API連携（Webhook）
+- ✅ 通話ログ・メモ機能
+- ✅ 初見/リピーター判定
+
+### データベース
+- ✅ SQLite → MySQL/MariaDB完全移行
+- ✅ 顧客管理テーブル（orders, customer_cast_history, cti_call_logs, customer_notes）
+- ✅ マイグレーションスクリプト完備
+
+---
+
+## 🚀 本番環境デプロイ（サーバー管理者向け）
+
+### ⚡ ワンコマンドデプロイ（推奨）
+
+**すべてのエラーを自動修正して最新コードをデプロイ：**
+
+```bash
+ssh root@210.131.222.152 'cd /var/www/goodfifeproject && git fetch origin && git reset --hard origin/genspark_ai_developer && chmod +x fix-all-v2.sh && ./fix-all-v2.sh'
+```
+
+**実行時間:** 約10〜15分  
+**自動処理内容:**
+- ✅ 最新コード取得（genspark_ai_developer ブランチ）
+- ✅ バックエンド: TypeScript → JavaScript ビルド + PM2起動
+- ✅ フロントエンド: Next.jsリビルド + PM2起動
+- ✅ データベースマイグレーション実行
+- ✅ 環境変数自動設定
+
+### 📍 本番環境URL
+
+| サービス | URL |
+|---------|-----|
+| **管理画面（CTI受注）** | http://210.131.222.152:3000/admin/login |
+| **ブランドトップ** | http://210.131.222.152/ |
+| **西船橋店** | http://210.131.222.152/nishifuna |
+| **錦糸町店** | http://210.131.222.152/kinshicho |
+| **葛西店** | http://210.131.222.152/kasai |
+| **松戸店** | http://210.131.222.152/matsudo |
+| **バックエンドAPI** | http://210.131.222.152:5000/api |
+
+### 🔐 管理画面ログイン
+
+| 項目 | 情報 |
+|------|------|
+| URL | http://210.131.222.152:3000/admin/login |
+| 電話番号 | `09000000000` |
+| パスワード | `admin123` |
+
+**⚠️ セキュリティ注意:** 初回ログイン後、必ずパスワードを変更してください！
+
+### 📚 デプロイドキュメント
+
+| ドキュメント | 内容 |
+|-------------|------|
+| [FINAL_DEPLOY_SOLUTION.md](FINAL_DEPLOY_SOLUTION.md) | 📖 完全デプロイガイド（総合版） |
+| [TS_NODE_FIX.md](TS_NODE_FIX.md) | ts-node エラー解決方法 |
+| [QUICK_FIX.md](QUICK_FIX.md) | Next.js ビルドエラー緊急修正 |
+| [ADMIN_CREDENTIALS.md](ADMIN_CREDENTIALS.md) | 管理者ログイン情報 |
+| [README_DEPLOY.md](README_DEPLOY.md) | デプロイ簡易ガイド |
+
+### 🚀 デプロイスクリプト
+
+| スクリプト | 用途 | 実行時間 |
+|-----------|------|---------|
+| `fix-all-v2.sh` | 🎯 完全自動修正（推奨） | 10〜15分 |
+| `emergency-fix.sh` | フロントエンドのみ修正 | 5〜10分 |
+| `fix-backend.sh` | バックエンドのみ修正 | 3〜5分 |
+
+---
+
+## 🚀 開発環境クイックスタート（初めての方向け）
+
+### GitHub Codespacesで動かす（最も簡単！）
+
+1. このリポジトリのページで緑色の「**Code**」ボタンをクリック
+2. 「**Codespaces**」タブを選択
+3. 「**Create codespace on main**」をクリック
+4. 開いたターミナルで以下を実行：
+   ```bash
+   ./start.sh
+   ```
+5. 「Application available on port 3000」の通知が出たら「**ブラウザで開く**」をクリック
+
+**詳しい手順は [SETUP.md](SETUP.md) をご覧ください！**
 
 ## 機能
 
@@ -119,18 +217,43 @@ npm start
 
 ## データベース
 
-SQLiteを使用しています。初回起動時に自動的にテーブルが作成されます。
+本番環境は **MySQL/MariaDB**、開発環境は **SQLite** を使用しています。
 
 ### テーブル構成
-- users: ユーザー情報
-- casts: キャスト情報
-- cast_images: キャスト画像
-- cast_schedules: 出勤スケジュール
-- reservations: 予約情報
-- reviews: 口コミ
-- blogs: ブログ記事
-- chat_messages: チャットメッセージ
-- announcements: お知らせ
+
+#### 基本機能
+- `users`: ユーザー情報（顧客・管理者・キャスト・スタッフ）
+- `casts`: キャスト情報
+- `cast_images`: キャスト画像
+- `cast_schedules`: 出勤スケジュール
+- `reservations`: 予約情報（旧システム）
+- `reviews`: 口コミ
+- `blogs`: ブログ記事
+- `chat_messages`: チャットメッセージ
+- `announcements`: お知らせ
+
+#### マルチ店舗対応
+- `stores`: 店舗情報（西船橋、錦糸町、葛西、松戸）
+- `instant_princess`: 即姫設定（店舗別）
+
+#### 顧客管理・CTI連携
+- `orders`: 受注情報（顧客、キャスト、予約日時、料金）
+- `customer_cast_history`: 顧客・キャスト接客履歴
+- `cti_call_logs`: 通話ログ（Dialpad連携）
+- `customer_notes`: 顧客メモ（タイムライン形式）
+- `dialpad_webhook_settings`: Dialpad Webhook設定（店舗別）
+
+### マイグレーション
+
+マイグレーションファイルは `server/migrations/` に格納されています：
+
+```bash
+# 管理者アカウント作成
+mysql -u hitozumano_mitu -p'Hjmitsu^90' -D hitozumano_mitu < server/migrations/create_admin_user.sql
+
+# 顧客管理テーブル作成
+mysql -u hitozumano_mitu -p'Hjmitsu^90' -D hitozumano_mitu < server/migrations/create_customer_management_tables.sql
+```
 
 ## API エンドポイント
 

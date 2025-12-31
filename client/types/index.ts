@@ -26,6 +26,25 @@ export interface Cast {
   clothing_request_ok?: boolean;
   overnight_ok?: boolean;
   sweet_sadist_ok?: boolean;
+  deep_kiss?: boolean;
+  body_lip?: boolean;
+  sixtynine?: boolean;
+  fellatio?: boolean;
+  sumata?: boolean;
+  rotor?: boolean;
+  vibrator?: boolean;
+  no_panties_visit?: boolean;
+  no_bra_visit?: boolean;
+  pantyhose?: boolean;
+  pantyhose_rip?: boolean;
+  instant_cunnilingus?: boolean;
+  instant_fellatio?: boolean;
+  night_crawling_set?: boolean;
+  lotion_bath?: boolean;
+  mini_electric_massager?: boolean;
+  remote_vibrator_meetup?: boolean;
+  holy_water?: boolean;
+  anal_fuck?: boolean;
   profile_text?: string;
   is_new?: boolean;
   new_until?: string;
@@ -34,10 +53,33 @@ export interface Cast {
   images?: CastImage[];
   schedules?: CastSchedule[];
   reviews?: Review[];
+  blogs?: Blog[];
   review_count?: number;
   avg_rating?: number;
   created_at: string;
   updated_at: string;
+  // Additional fields
+  cast_comment?: string;
+  manager_comment?: string;
+  shop_comment?: string;
+  weight?: number;
+  profile?: string;
+  sm_ok?: boolean;
+  cosplay_ok?: boolean;
+  toy_ok?: boolean;
+  lotion_ok?: boolean;
+  is_active?: boolean;
+  specialty?: string;
+  anal_ok?: boolean;
+  hobby?: string;
+  join_date?: string;
+  catchphrase_short?: string;
+  catchphrase_long?: string;
+  style_type?: string;
+  personality_type?: string;
+  alcohol_ok?: boolean;
+  is_public?: number;
+  display_order?: number;
 }
 
 export interface CastImage {

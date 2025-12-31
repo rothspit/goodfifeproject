@@ -1,0 +1,78 @@
+[
+  {
+    "text": "店舗管理",
+    "href": "https://spmanager.cityheaven.net/H1Main.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "予約管理\n                                             ",
+    "href": "https://spmanager.cityheaven.net/R1ReservationLogin.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "お知らせ\n\t\t\t\t\t\t                        21",
+    "href": "https://spmanager.cityheaven.net/HBAdminMessageReceiveTop.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "未読の口コミがあります\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t1件",
+    "href": "https://spmanager.cityheaven.net/H8ReviewList.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "更新ボタン\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t残り2",
+    "href": "https://spmanager.cityheaven.net/H1Main.php#"
+  },
+  {
+    "text": "アクセス解析",
+    "href": "https://spmanager.cityheaven.net/H2TokeiShop.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "イベント",
+    "href": "https://spmanager.cityheaven.net/H2EventList.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "写メ日記",
+    "href": "https://spmanager.cityheaven.net/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "はじめてQ&A",
+    "href": "https://spmanager.cityheaven.net/H2FirstTimeQA.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "HOME設定",
+    "href": "https://spmanager.cityheaven.net/H1HomeMenuSetting.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "ログアウト",
+    "href": "https://spmanager.cityheaven.net/H1Login.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "お店情報",
+    "href": "https://spmanager.cityheaven.net/H2ShopIntroduction.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "イベント",
+    "href": "https://spmanager.cityheaven.net/H2EventList.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "デコオプション",
+    "href": "https://spmanager.cityheaven.net/H3KeitaiDecoMain.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "アクセス解析",
+    "href": "https://spmanager.cityheaven.net/H2TokeiShop.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "口コミ",
+    "href": "https://spmanager.cityheaven.net/H8ReviewList.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "はじめてQ&A",
+    "href": "https://spmanager.cityheaven.net/H2FirstTimeQA.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "写メ日記",
+    "href": "https://spmanager.cityheaven.net/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu"
+  },
+  {
+    "text": "オキニトーク",
+    "href": "https://spmanager.cityheaven.net/H8OkiniTalkManager.php?shopdir=cb_hitozuma_mitsu"
+  }
+]

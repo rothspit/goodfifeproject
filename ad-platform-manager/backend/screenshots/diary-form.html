@@ -1,0 +1,952 @@
+<!DOCTYPE html><html lang="ja" class="ui-mobile"><head><base href="https://spmanager.cityheaven.net/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta name="format-detection" content="telephone=no">
+		<title>風俗情報サイト　シティヘブンネットCMS</title>
+		
+		<link rel="stylesheet" href="/css/jquery.mobile-1.0.min.css?ssldate=20180724" media="screen">
+		<link rel="stylesheet" href="/css/base.css?update=20220801&amp;ssldate=20180724" media="screen">
+		<script type="text/javascript" async="" src="https://cdn.treasuredata.com/sdk/2.1/td.min.js"></script><script type="text/javascript" src="/js/jquery-1.7.1.min.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/disable-ajax.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/jquery.mobile-1.0.min.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/common.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/screenLock.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/popup-mes.js?ssldate=20180724"></script>
+		<script type="text/javascript" src="/js/toast-message.js?ssldate=20180724"></script>
+	
+        <script type="text/javascript">
+        if (!~navigator.userAgent.indexOf('Google Page Speed Insights') && !~navigator.userAgent.indexOf('Googlebot') && !~navigator.userAgent.indexOf('Chrome-Lighthouse')) {
+        !function(t,e){if(void 0===e[t]){e[t]=function(){e[t].clients.push(this),this._init=[Array.prototype.slice.call(arguments)]},
+        e[t].clients=[];for(var r=function(t){return function(){return this["_"+t]=this["_"+t]||[],
+        this["_"+t].push(Array.prototype.slice.call(arguments)), this}}, s=["blockEvents",
+        "unblockEvents", "setSignedMode", "setAnonymousMode", "resetUUID", "addRecord",
+        "fetchGlobalID", "set", "trackEvent", "trackPageview", "trackClicks", "ready"],
+        n=0;n<s.length;n++){var c=s[n];e[t].prototype[c]=r(c)}var o=document.createElement("script");o.type="text/javascript",
+        o.async=!0, o.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.treasuredata.com/sdk/2.1/td.min.js";
+        var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o, a)}}("Treasure", this);
+        }
+        </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.8.6/fingerprint2.min.js"></script>
+        </head>
+	<body class="ui-mobile-viewport">
+    <script type="text/javascript">
+        if (!~navigator.userAgent.indexOf('Google Page Speed Insights') && !~navigator.userAgent.indexOf('Googlebot') && !~navigator.userAgent.indexOf('Chrome-Lighthouse')) {
+        var td = new Treasure({
+          host: 'in.treasuredata.com',
+          database: 'surprisecrew_production',
+          writeKey: '10483/24240077c38c8ca9b2128445a441bd4b560a6d52'
+        });
+        // td_global_idを取得可能とするため、同意を得たものとして記述
+        td.setSignedMode();
+        // Enable cross-domain tracking
+        td.set('$global', 'td_global_id', 'td_global_id');
+
+        function getCookieForTD(key) {
+          var cookieString = document.cookie;
+          var cookieKeyArray = cookieString.split(';');
+          for (var i=0; i<cookieKeyArray.length; i++) {
+            var targetCookie = cookieKeyArray[i];
+            targetCookie = targetCookie.replace(/(^\s+)|(\s+$)/g, '');
+            var valueIndex = targetCookie.indexOf('=');
+            if (targetCookie.substring(0, valueIndex) == key) {
+              return unescape(targetCookie.slice(valueIndex + 1));
+            }
+          }
+          return '';
+        }
+
+        function uuid() {
+          var uuid = '', i, random;
+          for (i = 0; i < 15; i++) {
+            random = Math.random() * 10 | 0;
+              uuid += random;
+          }
+          return uuid;
+        }
+
+        if (getCookieForTD('unique_id') == '') {
+          var date, expires;
+          date = new Date();
+          date.setTime(date.getTime() + 2*356*24*60*60*1000); // 二年有効
+          expires = date.toGMTString();
+          document.cookie = 'unique_id=' + uuid() + ' ; path=/; expires=' + expires;
+        }
+    new Fingerprint2().get(function(result, components) {
+      var fp = result;
+      td.set('h_td_pageviews', 
+        {
+          uniqueId: getCookieForTD('unique_id'),
+          group_admin_id: getCookieForTD('group_admin_id'),
+          shop_org_id: getCookieForTD('shop_org_id'),
+          fingerprint: fp,
+          page: 'spmanager'
+        }
+      );
+      td.trackPageview('h_td_pageviews');
+    });
+    }
+    </script>
+    
+
+				<style>
+div#header div#global ul#navigation li.head-menu {
+    width: 25%;
+    height: 50px;
+    display: block;
+    float: left;
+    text-align: center;
+    background-color: #E1E1E1;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#E1E1E1));
+    background: -moz-linear-gradient(center top, #FFFFFF, #E1E1E1) repeat scroll 0 0 transparent;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#E1E1E1);
+    border-left: 1px solid #BBBBBB;
+    border-bottom: 1px solid #BBBBBB;
+    box-sizing: border-box;
+    text-align: center;
+}
+div#header div#global ul#navigation li a img.head-link-img {
+    width: 60px;
+    height: auto;
+    margin: 8px auto -4px;
+    display: inline-block;
+}
+div#header div#global ul#navigation li.stay {
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    border-bottom: 1px none #FFFFFF;
+    border-left: 0px none #BBBBBB;
+}
+span.cnt-bg {
+    background: #e00;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 100%;
+    margin-left: 2px;
+    font-size: 11px;
+    text-align: center;
+}
+div#header div#global ul#navigation li.head-menu.reserve {
+    background: #fff;
+}
+</style>
+<div id="header">
+	<div id="global">
+		<div id="navi">
+			<ul id="navigation">
+                				<li class="head-menu stay">
+                					<a class="header-link" href="/H1Main.php?shopdir=cb_hitozuma_mitsu" id="shopManage">
+                                        <img class="head-link-img" src="/img/spmanager/header/header_menu1.png">
+                                            <div></div>
+						<span class="head-link-txt">店舗管理</span>
+                        					</a>
+				</li>
+                                                <li class="head-menu">
+                                    <a class="header-link" href="/R1ReservationLogin.php?shopdir=cb_hitozuma_mitsu" target="_blank">
+                        <img class="head-link-img" src="/img/spmanager/header/header_menu_reserve.jpg">
+                        <div></div>
+                        <span class="head-link-txt no-requruit">予約管理</span>
+                                                <span class="cnt-bg">1</span>
+                                            </a>
+                </li>
+                            				<li class="head-menu">
+					<a class="header-link" id="reqappmenushow">
+                        <img class="head-link-img" src="/img/spmanager/header/header_menu2_f2.png">
+                        <div></div>
+						<span class="head-link-txt no-requruit">求人管理</span>
+                        					</a>
+				</li>
+            				<li class="head-menu ">
+					<a class="header-link" href="/HBAdminMessageReceiveTop.php?shopdir=cb_hitozuma_mitsu" id="oshirase">
+                                        <img class="head-link-img" src="/img/spmanager/header/header_menu3_f2.png">
+                                            <div></div>
+						<span class="head-link-txt">お知らせ</span>
+						                        <span class="cnt-bg">21</span>											</a>
+				</li>
+			</ul>
+		</div>
+		<div id="navi_dummy"></div>
+	</div>
+</div>
+<div class="req-app-launch"><iframe id="req_launch_frame" style="height: 8px;"></iframe></div>
+		
+		<div id="home" data-theme="d" data-role="page" data-url="home" tabindex="0" class="ui-page ui-body-d ui-page-active" style="min-height: 1080px;">
+
+						<div id="top_area">
+	<div class="clr">
+		<div class="logobutton">
+				<img class="logo" src="/img/spmanager/header/logo/header_mini.png" height="30px">
+			<a href="javascript:siteChange()" class="ui-link"><div style="display:inline;height:30px;"> <img id="site_change_icon" src="/img/spmanager/header/site_change.png" height="30px"></div></a> 		</div>
+		<div id="navigation2">
+			<div id="name">人妻の蜜　西船橋店様</div>
+			<a href="https://smart.cityheaven.net/cb/hitozuma_mitsu" class="under-line txt12" data-role="none">お店ページ</a> | <a id="open-menu" class="open-menu under-line txt12 ui-link">メニュー</a>
+		</div>
+	</div>
+		<div id="site-change" style="display:none;">
+				        <a href="http://manager.mensheaven.jp/top_menus/?cmid=2500000713&amp;siteid=17" target="_blank" class="site_change_btn ui-link">男子求人管理画面</a>
+			</div>
+	</div>
+			
+			<div id="keitai-diary">
+
+				<div class="title-bar ui-field-contain ui-body ui-br" data-role="fieldcontain">
+					<span class="title-txt">写メ日記一覧</span>
+					<a class="help-msg position-right ui-link" target="updateGuide" href="help/H8KeitaiDiaryList.html">
+						<img id="helpBtn" src="/img/spmanager/icon/help_btn.png">
+					</a>
+				</div>
+								<div id="tooltip0" class="tooltip">
+	<div style="padding: 5px;">
+		<iframe name="updateGuide" frameborder="0" scrolling="no" class="w100">
+		</iframe>
+	</div>
+    <div class="helpclose">
+		<a id="tooltipclose" class="close-btn ui-link" style="color: #000;">閉じる</a>
+	</div>
+</div>				                
+                <div id="manager-top2">
+                <div class="home-menu clr">
+						<ul class="home-menu-ul">
+						  <li class="manager-line menu-right-line menu-bottom-line">
+
+							<a href="/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu" class="manager-list menu-link ui-link">
+								<div class="menu-box">
+									<div class="img"><img src="img/spmanager/icon/diary_menu1.png" class="menu-size"></div>
+									<div class="txt">
+										投稿一覧
+																						</div>
+							    </div>
+							</a>
+							</li>
+
+																																																		<li class="manager-line menu-bottom-line">
+                                                                                <a href="javascript:void(0);" class="manager-list menu-link ui-link" onclick="alert('PCマネージャでの実施をお願いします。');">
+                                        											<div class="menu-box">
+												<div class="img"><img src="img/spmanager/icon/diary_menu2_f2.png" class="menu-size"></div>
+												<div class="txt">
+													利用登録
+																									</div>
+											</div>
+										</a>
+
+									</li>
+	
+						</ul>
+					</div>
+                    </div>
+
+				
+				<div class="list-title">
+					投稿一覧
+					<a href="/H8KeitaiDiaryDeleteList.php?shopdir=cb_hitozuma_mitsu" class="list-title-right-link ui-link">記事を削除する</a>
+				</div>
+
+															<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764518311&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063336954_0764518311pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月17日 02:24<br>
+												風花（ふうか）<br>
+												<span class="link-color">エッチ…</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764519103&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063468755_0764519103pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月17日 02:14<br>
+												雲（くも）<br>
+												<span class="link-color">一緒にあたたまろ？♡</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764513164&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063459069_0764513164pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月17日 01:09<br>
+												結由（ゆゆ）<br>
+												<span class="link-color">ちゃーむぽいんと♡</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764499267&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063410682_0764499267pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月17日 00:21<br>
+												希美（のぞみ）<br>
+												<span class="link-color">空っぽになっちゃったね💕</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764489446&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0061988053_0764489446pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月17日 00:01<br>
+												じゅり<br>
+												<span class="link-color">おやすみなさい😌🌃🌙*ﾟ</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764489591&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0061988053_0764489591pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 23:04<br>
+												じゅり<br>
+												<span class="link-color">❤️‍🔥オープンブラ好き...</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764488525&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0061988053_0764488525pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 22:56<br>
+												じゅり<br>
+												<span class="link-color">🔞淫乱サンタ🎄☺️💓💓</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764486310&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063459069_0764486310pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 22:52<br>
+												結由（ゆゆ）<br>
+												<span class="link-color">かわいいでしょ？</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764481855&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063468755_0764481855pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 22:26<br>
+												雲（くも）<br>
+												<span class="link-color">Kスリット206号室お兄...</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764477616&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063336954_0764477616pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 22:02<br>
+												風花（ふうか）<br>
+												<span class="link-color">お礼💌</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764472749&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063410682_0764472749pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 21:28<br>
+												希美（のぞみ）<br>
+												<span class="link-color">ちらっ👀</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764472273&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063336954_0764472273pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 21:27<br>
+												風花（ふうか）<br>
+												<span class="link-color">お礼💌</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764473510&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0062575626_0764473510pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 21:19<br>
+												桃奈（ももな）<br>
+												<span class="link-color">明日出勤♡♡</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764462022&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0041514464_0764462022pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 20:11<br>
+												理恵（りえ）<br>
+												<span class="link-color">もうすぐ、、💓</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764458631&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063354179_0764458631pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 20:00<br>
+												詩織（しおり）<br>
+												<span class="link-color">止まらない……</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764456358&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063469850_0764456358pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 20:00<br>
+												梨愛良（りあら）<br>
+												<span class="link-color">あしあし❤️❤️</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764451505&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063410682_0764451505pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 19:14<br>
+												希美（のぞみ）<br>
+												<span class="link-color">シチュエーションえ〇ち</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764449729&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063459069_0764449729pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 19:13<br>
+												結由（ゆゆ）<br>
+												<span class="link-color">コスプレえっtなゆゆ…/...</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764444641&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063370695_0764444641pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 18:41<br>
+												紅葉（もみじ）<br>
+												<span class="link-color">見せて？わたしだけに勃っ...</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764441218&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063468755_0764441218pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 18:25<br>
+												雲（くも）<br>
+												<span class="link-color">初めまして🏵️</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764438138&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063469850_0764438138pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 18:06<br>
+												梨愛良（りあら）<br>
+												<span class="link-color">はじめまして♡</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764426341&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0061988053_0764426341pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 17:09<br>
+												じゅり<br>
+												<span class="link-color">お礼💌日記🥰</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764425917&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063410682_0764425917pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 17:07<br>
+												希美（のぞみ）<br>
+												<span class="link-color">ピンク🎀</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764394634&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0059781324_0764394634pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 16:30<br>
+												夕妃（ゆうひ）<br>
+												<span class="link-color">🎄🤍ちょっと早めのクリス...</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764415572&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063336954_0764415572pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 16:01<br>
+												風花（ふうか）<br>
+												<span class="link-color">パンチラ…💓</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764416596&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063354179_0764416596pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 16:01<br>
+												詩織（しおり）<br>
+												<span class="link-color">むりしない！</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764414587&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063459069_0764414587pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 15:48<br>
+												結由（ゆゆ）<br>
+												<span class="link-color">はじめましてっ</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764391395&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0063336954_0764391395pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 13:29<br>
+												風花（ふうか）<br>
+												<span class="link-color">出勤するよ</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764392514&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0059781324_0764392514pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 13:25<br>
+												夕妃（ゆうひ）<br>
+												<span class="link-color">夕妃に似てるラブドール⁉...</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+											<div class="diary-list">
+							<a class="arrow ui-link" href="/H8KeitaiDiaryDetail.php?c_diary_id=764373134&amp;shopdir=cb_hitozuma_mitsu">
+								<table class="table0">
+									<tbody>
+										<tr>
+																						<td>
+												                                                <img class="diary-list-img" alt="画像" src="./img/girls/cb/hitozuma_mitsu/grdr0061988053_0764373134pc.jpg?dummy=20251217024242">
+											</td>
+																						<td class="txt-color weight-normal list-space">
+												12月16日 12:31<br>
+												じゅり<br>
+												<span class="link-color">❤️‍🔥お楽しみ動画🔞⚠...</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</a>
+						</div>
+					
+										<div>
+			<nav>
+			<ul class="normal-pager" data-role="none">
+				<li class="pager-first">
+									</li>
+				<li class="pager-prev">
+									</li>
+				<li class="pager-next">
+					<a href="/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu&amp;start=2" class="page-link-n ui-link"><span class="txt-color">次へ</span></a>				</li>
+				<li class="pager-last">
+					<a href="/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu&amp;start=120" class="page-link-n ui-link"><img src="/img/button/smartphone/btn_oldest.png" alt="最後へ"></a>				</li>
+			</ul>
+		</nav>
+	</div>
+					
+				
+				
+			</div>
+
+						<input type="hidden" id="message" value="" style="">
+			
+						<div id="footer" class="top-border">
+	    <div id="manager-top">
+    <div class="top-menu box clr">
+					<table class="top-menu-table">
+						<tbody><tr>
+							<td class="top-menu-cell right-line">
+								<a id="open-menu" class="top-menu-link open-menu ui-link">
+									<div class="top-menu-block">
+										<img src="/img/spmanager/footer/footer_menu1.png" class="top-menu-img">
+										<div class="top-menu-txt">MENU一覧</div>
+									</div>
+								</a>
+							</td>
+							<td class="top-menu-cell">
+								<a href="/H1Main.php?shopdir=cb_hitozuma_mitsu" class="top-menu-link right ui-link">
+									<div class="top-menu-block">
+										<img src="/img/spmanager/footer/footer_menu3.png" class="top-menu-img">
+										<div class="top-menu-txt">HOMEへ戻る</div>
+									</div>
+								</a>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+                
+		</div>
+		<div data-role="fieldcontain" class="box txt-center ui-field-contain ui-body ui-br">
+<div style="padding-bottom: 7px;">
+<a href="http://smart.cityheaven.net/guideline_sp.html" target="_blank" class="footer-link ui-link">情報掲載に関するお願い</a></div>
+		<a class="footer-link ui-link" href="https://www.hgjn-help.com/?site_domain=Admin_faq" target="_blank">Ｑ＆Ａ</a>&nbsp;|&nbsp;
+		<a class="footer-link ui-link" href="mailto:shop@cityheaven.net?shopdir=cb_hitozuma_mitsu">サポートに質問する</a>&nbsp;|&nbsp;
+		<a class="footer-link ui-link" href="/H1Login.php?shopdir=cb_hitozuma_mitsu" id="logout" onclick="return confirm('ログアウトします。\nよろしいですか?')">ログアウト</a>
+	</div>
+</div>
+			
+		</div>
+
+				<div id="menu-list" style="display: none;">
+	<div id="title">
+		<span class="menu-title">MENU一覧</span>
+		<div id="menu-close">
+			<a id="close-menu" class="close-menu">閉じる</a>
+		</div>
+	</div>
+	<div id="menu">
+		<div id="menu-caption">店舗ページの更新・変更</div>
+		<ul id="menu-list">
+			<li class="half-li">
+									<form method="post" name="update_cnt" action="/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu#open-menu"><input type="hidden" name="_token__" value="1622b1d102875668c2d14b1e59a4f771" style="">
+						<input type="hidden" name="updatemenu" value="21" style="">
+						<input type="hidden" name="updatemenulist" value="更新する" style="">
+						<a onclick="confirm('最終更新日時を更新します。\nよろしいですか？')&amp;&amp;document.update_cnt.submit();" class="menu-list-link menu-counter">カウンターの更新</a>
+					</form>
+							</li>
+						<li class="half-li">
+				<a href="/H2ShopIntroduction.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-shopshokai">お店情報</a>
+			</li>
+												<li class="half-li">
+				<a href="/H2EventList.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-event">イベント</a>
+			</li>
+										<li class="half-li">
+					<a href="/H3KeitaiDecoMain.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-deco">デコオプション</a>
+				</li>
+						<li class="half-li">
+				<a href="/H2TokeiShop.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-access">アクセス解析</a>
+			</li>
+			<li class="half-li">
+				<a href="/H8ReviewList.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-review">口コミ</a>
+			</li>
+						<li class="half-li">
+				<a href="/H2FirstTimeQA.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-firsttimeqa">はじめてQ&amp;A</a>
+			</li>
+					</ul>
+        <div id="menu-caption">出勤情報</div>
+		<ul id="menu-list">
+			<li class="half-li">
+                                <a href="javascript:void(0);" class="menu-list-link menu-syukkinentry" onclick="alert('PCマネージャでの実施をお願いします。');">出勤登録</a>
+                			</li>
+            <li class="half-li">
+                				                                                				<a href="javascript:void(0);" class="menu-list-link menu-sokuhime" onclick="alert('PCマネージャでの実施をお願いします。');">即ヒメ</a>
+                			</li>
+            <li class="half-li">
+                                <a href="javascript:void(0);" class="menu-list-link menu-syukkinentry" onclick="alert('PCマネージャでの実施をお願いします。');">出勤申請</a>
+                			</li>
+		</ul>
+        			                                		<ul id="menu-list">
+            										                                                                                                    																													
+	                    		        	        		</ul>
+						<div id="menu-caption">女の子情報</div>
+				<ul id="menu-list">
+			<li class="half-li">
+                				                                                				<a href="javascript:void(0);" class="menu-list-link menu-girllist" onclick="alert('PCマネージャでの実施をお願いします。');">女の子</a>
+                			</li>
+									<li class="half-li">
+                                <a href="javascript:void(0);" class="menu-list-link menu-mypage" onclick="alert('PCマネージャでの実施をお願いします。');">マイページ</a>
+                			</li>
+			<li class="half-li">
+				<a href="/H8KeitaiDiaryList.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-diary">写メ日記</a>
+			</li>
+						            				<li class="half-li">
+					<a href="/H8OkiniTalkManager.php?shopdir=cb_hitozuma_mitsu" class="menu-list-link menu-okinitalk">オキニトーク</a>
+				</li>
+                		</ul>
+		<div id="menu-caption">サポート</div>
+							</div>
+</div>
+<div id="appmenu-list" style="display: none;">
+	<div id="menu">
+        <a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j" data-theme="j" data-role="button" onclick="appExistChk('heaven:///', '', '', 'http://spmanager.cityheaven.net/H1Main_3831455342486170394351594e724a7262766457476b412f755752454462692f49757051444744467674773d')">
+			<span class="ui-btn-text">アプリを起動する</span>
+		</a>
+		<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j" data-theme="j" data-role="button" onclick="launchStore('')">
+			<span class="ui-btn-text">アプリダウンロードページへ</span>
+		</a>
+		<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n" data-role="button" id="appmenuclose">
+			<span class="ui-btn-text2">キャンセル</span>
+		</a>
+		<div class="app-launch"><iframe id="launch_frame"></iframe></div>
+	</div>
+</div>
+<div id="reqappmenu-list" style="display: none;">
+	<div id="menu">
+						<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j" data-theme="j" data-role="button" onclick="launchReqWeb('https://cfsmart.girlsheaven-job.net/manager/account_3831455342486170394351594e724a7262766457476b412f755752454462692f49757051444744467674773d')">
+					<span class="ui-btn-text">求人管理へ移動する</span>
+		</a>
+												<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n" data-role="button" id="reqappmenuclose">
+			<span class="ui-btn-text2">キャンセル</span>
+		</a>
+																	</div>
+</div>
+		
+				<div id="footerHelpMes" style="display: none;">
+	<div class="box">
+		<a id="footerHelpClose" class="position-right"><img src="/img/spmanager/icon/help_close.png"></a>
+	</div>
+	<div>
+		<iframe name="footerHelp" frameborder="0" scrolling="no" class="w100" src="help/footer_help.html" style="height: 0px;">
+		</iframe>
+	</div>
+</div>			
+<div class="ui-loader ui-body-a ui-corner-all" style="top: 540px; display: none;"><span class="ui-icon ui-icon-loading spin"></span><h1>loading</h1></div></body></html>

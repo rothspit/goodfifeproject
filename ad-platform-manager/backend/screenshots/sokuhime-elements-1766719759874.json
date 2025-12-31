@@ -1,0 +1,715 @@
+{
+  "timestamp": "2025-12-26T03:29:19.874Z",
+  "elements": [
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "店舗管理",
+      "href": "/H1Main.php?shopdir=cb_idolgakuen_f",
+      "id": "shopManage",
+      "class": "header-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "予約管理",
+      "href": "/R1ReservationLogin.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "header-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "求人管理",
+      "href": "",
+      "id": "reqappmenushow",
+      "class": "header-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "お知らせ\n\t\t\t\t\t\t                        21",
+      "href": "/HBAdminMessageReceiveTop.php?shopdir=cb_idolgakuen_f",
+      "id": "oshirase",
+      "class": "header-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "",
+      "href": "javascript:siteChange()",
+      "id": "",
+      "class": "ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "お店ページ",
+      "href": "https://smart.cityheaven.net/cb/idolgakuen_f",
+      "id": "",
+      "class": "under-line txt12"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "メニュー",
+      "href": "",
+      "id": "open-menu",
+      "class": "open-menu under-line txt12 ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "男子求人管理画面",
+      "href": "http://manager.mensheaven.jp/top_menus/?cmid=2510055906&siteid=17",
+      "id": "",
+      "class": "site_change_btn ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "",
+      "href": "help/H9StandbyGirlRegist.html",
+      "id": "",
+      "class": "help-msg position-right ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "現在の登録状況へ戻る",
+      "href": "/H9StandbyGirlList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "ui-btn ui-btn-up-j ui-btn-corner-all ui-shadow"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "閉じる",
+      "href": "",
+      "id": "tooltipclose",
+      "class": "close-btn ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "コメント登録済",
+      "href": "#",
+      "id": "",
+      "class": "commentRegist ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "接客中",
+      "href": "#",
+      "id": "",
+      "class": "sokuhimebutton serviceRegist ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "待機中",
+      "href": "",
+      "id": "",
+      "class": "sokuhimebutton ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "即ヒメ",
+      "href": "",
+      "id": "",
+      "class": "sokuhimebutton ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "確定",
+      "href": "",
+      "id": "commitBtn",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-f"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "もとに戻す",
+      "href": "",
+      "id": "resetBtn",
+      "class": "ui-btn ui-btn-up-h ui-btn-corner-all ui-shadow"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "cancelBtn",
+      "class": "cancel-btn ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "cancelBtn",
+      "class": "cancel-btn ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "MENU一覧",
+      "href": "",
+      "id": "open-menu",
+      "class": "top-menu-link open-menu ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "HOMEへ戻る",
+      "href": "/H1Main.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "top-menu-link right ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "情報掲載に関するお願い",
+      "href": "http://smart.cityheaven.net/guideline_sp.html",
+      "id": "",
+      "class": "footer-link ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "Ｑ＆Ａ",
+      "href": "https://www.hgjn-help.com/?site_domain=Admin_faq",
+      "id": "",
+      "class": "footer-link ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "サポートに質問する",
+      "href": "mailto:shop@cityheaven.net?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "footer-link ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "ログアウト",
+      "href": "/H1Login.php?shopdir=cb_idolgakuen_f",
+      "id": "logout",
+      "class": "footer-link ui-link"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "閉じる",
+      "href": "",
+      "id": "close-menu",
+      "class": "close-menu"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "カウンターの更新",
+      "href": "",
+      "id": "",
+      "class": "menu-list-link menu-counter"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "お店情報",
+      "href": "/H2ShopIntroduction.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-shopshokai"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "イベント",
+      "href": "/H2EventList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-event"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "デコオプション",
+      "href": "/H3KeitaiDecoMain.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-deco"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "アクセス解析",
+      "href": "/H2TokeiShop.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-access"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "口コミ",
+      "href": "/H8ReviewList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-review"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "はじめてQ&A",
+      "href": "/H2FirstTimeQA.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-firsttimeqa"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "出勤登録",
+      "href": "/H7ShukkinNoteList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-syukkinentry"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "即ヒメ",
+      "href": "/H9StandbyGirlRegist.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-sokuhime"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "出勤申請",
+      "href": "/H7ShiftManagement.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-syukkinentry"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "女の子",
+      "href": "/H2GirlList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-girllist"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "マイページ",
+      "href": "/H8GirlMyPageSetting.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-mypage"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "写メ日記",
+      "href": "/H8KeitaiDiaryList.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-diary"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "オキニトーク",
+      "href": "/H8OkiniTalkManager.php?shopdir=cb_idolgakuen_f",
+      "id": "",
+      "class": "menu-list-link menu-okinitalk"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "アプリを起動する",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "アプリダウンロードページへ",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "appmenuclose",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "求人管理へ移動する",
+      "href": "",
+      "id": "",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-j"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "キャンセル",
+      "href": "",
+      "id": "reqappmenuclose",
+      "class": "ui-btn ui-btn-corner-all ui-shadow ui-btn-up-n"
+    },
+    {
+      "type": "link",
+      "tag": "a",
+      "text": "",
+      "href": "",
+      "id": "footerHelpClose",
+      "class": "position-right"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "f83b55cfaed82ff0b4da0484417c0927",
+      "id": "",
+      "class": "",
+      "name": "_token__"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "62689610",
+      "id": "working_girls_id_hidden",
+      "class": "",
+      "name": "working_girls_id_hidden"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "蘭々（らら）",
+      "id": "working_girls_name_hidden",
+      "class": "",
+      "name": "working_girls_name_hidden"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "顔ラン撃高！キャバ並神ビジュ！",
+      "id": "girls_comment",
+      "class": "",
+      "name": "girls_comment"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "62689610",
+      "id": "working_girls_id_hidden",
+      "class": "",
+      "name": "working_girls_id_hidden"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "蘭々（らら）",
+      "id": "working_girls_name_hidden",
+      "class": "",
+      "name": "working_girls_name_hidden"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "serving_end_time_hidden",
+      "class": "",
+      "name": "serving_end_time_hidden"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "false",
+      "id": "registed_flg_hidden",
+      "class": "",
+      "name": "registInfo[62689610][registed_flg_hidden]"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "蘭々（らら）",
+      "id": "",
+      "class": "",
+      "name": "registInfo[62689610][girls_name]"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "",
+      "class": "",
+      "name": "update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "c_member_id",
+      "class": "",
+      "name": "c_member_id"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "checkFlg",
+      "class": "",
+      "name": "checkFlg"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "0",
+      "id": "",
+      "class": "",
+      "name": "sbg_extend_number_flg"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "servingEndTime",
+      "class": "",
+      "name": "servingEndTime"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "60",
+      "id": "minutes-limit",
+      "class": "",
+      "name": "minutes_limit"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "f83b55cfaed82ff0b4da0484417c0927",
+      "id": "",
+      "class": "",
+      "name": "_token__"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "f83b55cfaed82ff0b4da0484417c0927",
+      "id": "",
+      "class": "",
+      "name": "_token__"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "text",
+      "value": "",
+      "id": "",
+      "class": "ui-input-text ui-body-d ui-corner-all ui-shadow-inset",
+      "name": "girls_comment"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "",
+      "class": "",
+      "name": "servingId"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "c_member_comment_id",
+      "class": "",
+      "name": "c_member_id"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "servingEndTime",
+      "class": "",
+      "name": "servingEndTime"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "",
+      "class": "",
+      "name": "checkFlg"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "コメント",
+      "id": "",
+      "class": "",
+      "name": "update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "button",
+      "value": "更新",
+      "id": "",
+      "class": "ui-btn-hidden",
+      "name": "commnet_update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "button",
+      "value": "登録",
+      "id": "",
+      "class": "ui-btn-hidden",
+      "name": "commnet_update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "f83b55cfaed82ff0b4da0484417c0927",
+      "id": "",
+      "class": "",
+      "name": "_token__"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "",
+      "class": "",
+      "name": "servingId"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "c_member_id",
+      "class": "",
+      "name": "c_member_id"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "servingEndTime",
+      "class": "",
+      "name": "servingEndTime"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "",
+      "class": "",
+      "name": "checkFlg"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "接客",
+      "id": "",
+      "class": "",
+      "name": "update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "button",
+      "value": "接客中解除",
+      "id": "",
+      "class": "ui-btn-hidden",
+      "name": "update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "button",
+      "value": "登録",
+      "id": "",
+      "class": "ui-btn-hidden",
+      "name": "update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "button",
+      "value": "登録",
+      "id": "",
+      "class": "ui-btn-hidden",
+      "name": "update"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "",
+      "id": "message",
+      "class": "",
+      "name": ""
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "f83b55cfaed82ff0b4da0484417c0927",
+      "id": "",
+      "class": "",
+      "name": "_token__"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "15",
+      "id": "",
+      "class": "",
+      "name": "updatemenu"
+    },
+    {
+      "type": "input",
+      "tag": "input",
+      "inputType": "hidden",
+      "value": "更新する",
+      "id": "",
+      "class": "",
+      "name": "updatemenulist"
+    }
+  ]
+}
